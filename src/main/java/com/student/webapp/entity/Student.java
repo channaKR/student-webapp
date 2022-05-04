@@ -9,11 +9,13 @@ public class Student {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
+	@Column(name="name",nullable=false)
 	private String name;
+	@Column(name="age",nullable=false)
 	private int age;
+	@Column(name="course",nullable=false)
 	private String course;
-	private String data;
-	private String data2;
+
 	
 	public Student() {
 		super();
